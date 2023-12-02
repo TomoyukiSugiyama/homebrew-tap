@@ -5,13 +5,13 @@
 class AnyConnect < Formula
   desc "Software to operate any connect easiser."
   homepage "https://github.com/TomoyukiSugiyama/any-connect"
-  version "0.1.2"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/TomoyukiSugiyama/any-connect/releases/download/v0.1.2/any-connect_0.1.2_darwin_arm64.tar.gz"
-      sha256 "b6f1bd0ac71ccc57ce873ad356c8b0baecdbcd3ecf166c97c8afec8cf6b6d989"
+      url "https://github.com/TomoyukiSugiyama/any-connect/releases/download/v0.2.0/any-connect_0.2.0_darwin_arm64.tar.gz"
+      sha256 "ee6c7b321727032d24a1e20749b0a6b87c1b9ae7606da1e99037528b8447a4d8"
 
       def install
         bin.install "any-connect"
@@ -21,8 +21,8 @@ class AnyConnect < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TomoyukiSugiyama/any-connect/releases/download/v0.1.2/any-connect_0.1.2_linux_arm64.tar.gz"
-      sha256 "7510d66e5d03881449d9c6bdb3063a511502599075802dee09c796b92e1af3a5"
+      url "https://github.com/TomoyukiSugiyama/any-connect/releases/download/v0.2.0/any-connect_0.2.0_linux_arm64.tar.gz"
+      sha256 "1fc3487922f968c4249e688666c81a1dbadb0265293555f8939a8ee4b55caef9"
 
       def install
         bin.install "any-connect"
