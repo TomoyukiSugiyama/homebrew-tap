@@ -1,9 +1,9 @@
 class Dotfiles < Formula
   desc "Terminal UI and CLI for dotfiles management"
   homepage "https://github.com/TomoyukiSugiyama/dotfiles"
-  url "https://github.com/TomoyukiSugiyama/dotfiles/releases/download/v0.2.0/dotfiles-0.2.0-universal-apple-darwin.tar.gz"
-  sha256 "c7c190cba4dfe692b7282594949c6e4418a80299551ef00a26d7538299f35154"
-  version "0.2.0"
+  url "https://github.com/TomoyukiSugiyama/dotfiles/releases/download/v0.3.0/dotfiles-0.3.0-universal-apple-darwin.tar.gz"
+  sha256 "80202335437d2ab7ee8b53a917e2322e3e30e9607a77c23bb159c75d028c24c7"
+  version "0.3.0"
   license "MIT"
 
   def install
