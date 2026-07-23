@@ -5,15 +5,15 @@
 class CloudSqlProxyV2Operator < Formula
   desc "Software to operate cloud-sql-proxy easiser."
   homepage "https://github.com/TomoyukiSugiyama/cloud-sql-proxy-v2-operator"
-  version "0.2.0"
+  version "0.3.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/TomoyukiSugiyama/cloud-sql-proxy-v2-operator/releases/download/v0.2.0/cloud-sql-proxy-v2-operator_0.2.0_Darwin_arm64.tar.gz"
-      sha256 "af0b5c2fa9e27a1962c03a4abe4a6f5e07a6fbd25aec0c9b5bbe8f502e4ecfd8"
+      url "https://github.com/TomoyukiSugiyama/cloud-sql-proxy-v2-operator/releases/download/v0.3.4/cloud-sql-proxy-v2-operator_Darwin_arm64.tar.gz"
+      sha256 "e497c5e5b0c9ebd843c7cc5e04a40e5e002424938c752b019eec4fa72bc93deb"
 
-      def install
+      define_method(:install) do
         bin.install "cloud-sql-proxy-v2-operator"
       end
     end
@@ -21,10 +21,9 @@ class CloudSqlProxyV2Operator < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TomoyukiSugiyama/cloud-sql-proxy-v2-operator/releases/download/v0.2.0/cloud-sql-proxy-v2-operator_0.2.0_linux_arm64.tar.gz"
-      sha256 "d22fe84f99d5365bb6af0da63e234da6c3d05099f59c36649d34c21042f1a062"
-
-      def install
+      url "https://github.com/TomoyukiSugiyama/cloud-sql-proxy-v2-operator/releases/download/v0.3.4/cloud-sql-proxy-v2-operator_Linux_arm64.tar.gz"
+      sha256 "15f927b25e0f08212c4418cfaa8ce25c4353caa0ed4583bfcfc01c82b62e3262"
+      define_method(:install) do
         bin.install "cloud-sql-proxy-v2-operator"
       end
     end
